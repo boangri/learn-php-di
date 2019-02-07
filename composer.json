@@ -1,0 +1,20 @@
+{
+    "name": "boangri/learn-php-di",
+    "description": "Tutotial project for learning PHP DI",
+    "type": "project",
+    "require": {
+        "php-di/php-di": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Boangri\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Boris Gribovskiy",
+            "email": "xinu@yandex.ru"
+        }
+    ]
+}
