@@ -1,12 +1,12 @@
 <?php
 
-namespace Boangri;
+namespace Boangri\LearnPhpDi;
 
 class UserManager
 {
     private $mailer;
 
-    public function __construct(Mailer $mailer)
+    public function __construct(MailerInterface $mailer)
     {
         $this->mailer = $mailer;
     }
@@ -17,6 +17,6 @@ class UserManager
         // ...
 
         // We send him an email to say hello!
-        $this->mailer->sendmail($email, 'Hello and welcome!');
+        $this->mailer->sendmail($email, 'Hello and welcome - 2!');
     }
 }

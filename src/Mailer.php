@@ -1,8 +1,8 @@
 <?php
 
-namespace Boangri;
+namespace Boangri\LearnPhpDi;
 
-class Mailer
+class Mailer implements MailerInterface
 {
     /** @var string Host */
     protected $host;
@@ -21,7 +21,7 @@ class Mailer
      * @param string $recipient
      * @param string $content
      */
-    public function sendmail($recipient, $content)
+    public function sendmail(string $recipient, string $content)
     {
         echo "Sending email to {$recipient} via {$this->host}\n";
         echo "Content: {$content}\n";
